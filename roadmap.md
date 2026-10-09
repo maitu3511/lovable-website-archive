@@ -17,3 +17,4 @@
 - [x] Replace the home-page background image.
 - [x] Match the specified home labels and footer maroon accents to the journey-link color.
 - [x] Verify images, colors, and navigation.
+- [x] Render the client-review rating stars in gold.
