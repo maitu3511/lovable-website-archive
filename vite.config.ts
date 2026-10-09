@@ -13,6 +13,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
   // External hosting (Netlify) needs the Netlify server preset; Lovable's own
-  // build environment ignores this and keeps its Cloudflare target.
-  nitro: { preset: "netlify" },
+  // build environment ignores the preset. renderer:false stops Nitro from serving
+  // the legacy root index.html (which loads a non-existent /src/main.tsx) as every page.
+  nitro: { preset: "netlify", renderer: false },
 });
