@@ -15,5 +15,5 @@ export default defineConfig({
   // External hosting (Netlify) needs the Netlify server preset; Lovable's own
   // build environment ignores the preset. renderer:false stops Nitro from serving
   // the legacy root index.html (which loads a non-existent /src/main.tsx) as every page.
-  nitro: { preset: "netlify", renderer: false },
+  nitro: { preset: "netlify", ...({ renderer: false } as object) },
 });
