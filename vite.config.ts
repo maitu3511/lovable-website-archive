@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // External hosting (Netlify) needs the Netlify server preset; Lovable's own
+  // build environment ignores this and keeps its Cloudflare target.
+  nitro: { preset: "netlify" },
 });
