@@ -175,8 +175,8 @@ export const TestimonialsSection: React.FC = () => {
             <span className="text-white font-bold">{current.company}</span>
           </p>
 
-          {/* 5 Rating Stars in Crisp White */}
-          <div className="flex items-center justify-center gap-1.5 mb-6 text-white drop-shadow-md">
+          {/* 5 Rating Stars in Gold */}
+          <div className="flex items-center justify-center gap-1.5 mb-6 text-brand-gold drop-shadow-md">
             {Array.from({ length: current.stars }).map((_, i) => (
               <span key={i} className="text-xl sm:text-2xl leading-none">
                 ★
