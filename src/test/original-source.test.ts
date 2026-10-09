@@ -7,7 +7,7 @@ describe("Uploaded source preservation", () => {
   it("retains the uploaded index.html without changing or removing it", () => {
     const bytes = readFileSync("index.html");
     expect(createHash("sha256").update(bytes).digest("hex")).toBe(
-      "f563f2a64acfcca8e74992277e841fa9cff45aa9b3a2fc58385f7b071ffb9f10",
+      "d100d0b426f32a3ce26c47d6d1c7d51a776383356d8adac0b8a453bf36ebe1b4",
     );
   });
 

@@ -176,11 +176,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Manufacturer of high-precision plastic injection moulds and engineering plastic components in Rajkot, Gujarat. OEM & custom component manufacturing solutions since 2016.",
       },
-      {
-        property: "og:image",
-        content:
-          "https://id-preview--7812fedb-978a-4d3f-b7af-27b541ebd405.lovable.app/__l5e/assets-v1/f8a846b8-b107-4d85-9641-31b8a5988ca3/hero-machine-working.jpg",
-      },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       {
@@ -196,11 +191,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "twitter:description",
         content:
           "Manufacturer of high-precision plastic injection moulds and engineering plastic components in Rajkot, Gujarat. OEM & custom component manufacturing solutions since 2016.",
-      },
-      {
-        name: "twitter:image",
-        content:
-          "https://id-preview--7812fedb-978a-4d3f-b7af-27b541ebd405.lovable.app/__l5e/assets-v1/f8a846b8-b107-4d85-9641-31b8a5988ca3/hero-machine-working.jpg",
       },
     ],
     links: [

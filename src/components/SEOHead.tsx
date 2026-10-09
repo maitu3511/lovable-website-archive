@@ -6,16 +6,7 @@ interface SEOProps {
   page: string;
 }
 
-const PAGE_SEO_DATA: Record<
-  string,
-  {
-    title: string;
-    description: string;
-    keywords: string;
-    path: string;
-    image: string;
-  }
-> = {
+const PAGE_SEO_DATA = {
   home: {
     title: "Advay Engineers – Plastic Injection Moulds & Engineering Components",
     description:
@@ -90,7 +81,7 @@ const PAGE_SEO_DATA: Record<
 
 export const SEOHead: React.FC<SEOProps> = ({ page }) => {
   const location = useLocation();
-  const currentSeo = PAGE_SEO_DATA[page] || PAGE_SEO_DATA.home;
+  const currentSeo = PAGE_SEO_DATA[page as keyof typeof PAGE_SEO_DATA] || PAGE_SEO_DATA.home;
 
   useEffect(() => {
     // 1. Dynamic document title

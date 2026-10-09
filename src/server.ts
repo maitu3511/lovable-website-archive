@@ -45,7 +45,7 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
-const assetMemoryCache = new Map<string, { body: Uint8Array; headers: Record<string, string> }>();
+const assetMemoryCache = new Map<string, { body: Uint8Array<ArrayBuffer>; headers: Record<string, string> }>();
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
